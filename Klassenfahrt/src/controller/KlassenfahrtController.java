@@ -32,9 +32,9 @@ public class KlassenfahrtController {
         lehrer4.add(getMc().getLc().getLehrer().get(0));
 
 
-        Klassenfahrt kl1 = new Klassenfahrt(getMc().getReiseziel().get(0), lehrer2,getMc().getKlasse().get(0), format.parse("25.05.2022"), format.parse("30.05.2022"));
+        Klassenfahrt kl1 = new Klassenfahrt(getMc().getReiseziel().get(1), lehrer2,getMc().getKlasse().get(0), format.parse("25.05.2022"), format.parse("30.05.2022"));
 
-        Klassenfahrt kl2 = new Klassenfahrt(getMc().getReiseziel().get(1), lehrer3,getMc().getKlasse().get(1), format.parse("25.05.2022"), format.parse("30.05.2022"));
+        Klassenfahrt kl2 = new Klassenfahrt(getMc().getReiseziel().get(0), lehrer3,getMc().getKlasse().get(0), format.parse("25.05.2022"), format.parse("30.05.2022"));
 
         Klassenfahrt kl3 = new Klassenfahrt(getMc().getReiseziel().get(1), lehrer1,getMc().getKlasse().get(1), format.parse("25.05.2022"), format.parse("30.05.2022"));
 
