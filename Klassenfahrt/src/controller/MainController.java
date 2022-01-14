@@ -6,20 +6,20 @@ public class MainController {
     KlasseController kc;
     KlassenfahrtController kfc;
     LehrerController lc;
-    ReisezielCOntroller rc;
+    ReisezielController rc;
 
     Output o = new Output();
 
 
     public MainController(){
-        setKc(new KlasseController(this));
+        setKc(new KlasseController());
         setKfc(new KlassenfahrtController(this));
-        setLc(new LehrerCOntroller(this));
+        setLc(new LehrerController(this));
         setRc(new ReisezielController(this));
     }
 
     public void createDemo() throws ParseException{
-        getKc().checkKlasseData();
+        getKc().createKlasseData();
         getKfc().checkKlassenfahrtData();
         getLc().checkLehrerData();
         getRc().checkReisezielData();
@@ -27,9 +27,9 @@ public class MainController {
 
 
     public void checkBedingungen(){
-        getKfc().checkLBesetzung();
+        getKfc().checkKfLehrerBesetzung();
         getKfc().checkBudget();
-        getKfc().checkAlter();
+        getKfc().checkKfAlter();
         getKfc().checkLErlaubnis();
     }
 
@@ -44,7 +44,7 @@ public class MainController {
     }public void setO(Output o) {
         this.o = o;
     }
-    public void setRc(ReisezielCOntroller rc) {
+    public void setRc(ReisezielController rc) {
         this.rc = rc;
     }
     public KlasseController getKc() {
@@ -59,8 +59,16 @@ public class MainController {
     public Output getO() {
         return o;
     }
-    public ReisezielCOntroller getRc() {
+    public ReisezielController getRc() {
         return rc;
+    }
+
+    public Object getReiseziel() {
+        return null;
+    }
+
+    public Object getKlasse() {
+        return null;
     }
     
     

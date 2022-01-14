@@ -50,4 +50,12 @@ public class Klassenfahrt {
     public Date getStart() {
         return start;
     }
+
+    public ArrayList<Klassenfahrt> getZweilehrer() {
+        return null;
+    }
+
+    public String getKlassenfahrterlaubnis() {
+        return null;
+    }
 }

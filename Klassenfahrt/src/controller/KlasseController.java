@@ -10,7 +10,7 @@ public class KlasseController {
 
     ArrayList<Klasse> klasse = new ArrayList<Klasse>();
 
-    public KlassenController(MainController mc){
+    public void KlassenController(MainController mc){
         setKlasse(klasse);
         setMc(mc);
     }
