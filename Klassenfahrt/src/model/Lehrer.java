@@ -22,5 +22,14 @@ public class Lehrer {
     public void setVorname(String vorname) {
         this.vorname = vorname;
     }
+    public String getErlaubnis() {
+        return erlaubnis;
+    }
+    public String getNachname() {
+        return nachname;
+    }
+    public String getVorname() {
+        return vorname;
+    }
     
 }
